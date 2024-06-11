@@ -79,7 +79,7 @@ class Visualization extends JPanel {
 
 }
 
-public class DWTApplication {
+public class origin {
     public static void main(String[] args) {
 
         // DWTの実行と係数の取得
