@@ -3,13 +3,13 @@ import java.awt.event.MouseEvent;
 import java.awt.Shape;
 
 class Controller extends MouseAdapter {
-    private Visualization view;
+    private DWTView view;
     private DWTModel model;
 
     private double[] coeffs;
     private double[] initialCoeffs;
 
-    public Controller(Visualization view, double[] coeffs) {
+    public Controller(DWTView view, double[] coeffs) {
         this.view = view;
         this.coeffs = coeffs;
         this.initialCoeffs = coeffs.clone();
