@@ -8,7 +8,12 @@ import java.awt.Graphics;
 class DWTView extends JPanel {
     private double[] coeffs;
     private int circleX, circleY;
-    Shape[] shapes = new Shape[coeffs.length];
+    Shape[] shapes;
+
+    public DWTView(double[] coeffs) {
+        this.coeffs = coeffs;
+        this.shapes = new Shape[coeffs.length];
+    }
 
     public void drawShapes() {
         int width = getWidth(); // パネルの幅
